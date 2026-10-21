@@ -1,5 +1,5 @@
 /*
- * Stress test for Glass TV on webOS. Open index.html#stress (in a browser, or the simulator): it presses
+ * Stress test for Loq TV on webOS. Open index.html#stress (in a browser, or the simulator): it presses
  * the remote thousands of times the way a restless thumb would, and checks after every phase that
  * nothing broke, leaked or lost an app. Black-box: it reads only what is on the page.
  *
@@ -140,7 +140,7 @@
     pre.style.cssText = 'position:fixed;left:40px;top:40px;z-index:99;background:rgba(0,0,0,.85);color:#7CFC9A;' +
       'font:26px/1.35 monospace;padding:24px 32px;border-radius:16px;white-space:pre-wrap;max-width:1200px';
     document.body.appendChild(pre);
-    console.log('[GlassTV stress] ' + JSON.stringify(report));
+    console.log('[LoqTV stress] ' + JSON.stringify(report));
   }
   run();
 })();

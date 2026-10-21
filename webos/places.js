@@ -73,7 +73,7 @@ var Places = (function () {
       }
       callback(items.length ? items : (c ? c.items : []));
     }).catch(function (e) {
-      console.log('[GlassTV] places: ' + e);
+      console.log('[LoqTV] places: ' + e);
       callback(c ? c.items : []);
     });
   }

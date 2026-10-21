@@ -1,5 +1,5 @@
 /*
- * Glass TV for webOS. The Android launcher's Home, rebuilt as a webOS web app: the clock row, the place
+ * Loq TV for webOS. The Android launcher's Home, rebuilt as a webOS web app: the clock row, the place
  * shelf over a dimmed picture of a place, a glass dock of apps, and one selection that glides between
  * them. webOS lets no app replace its home screen, so this is an app you open; it lists and opens the
  * TV's apps through webOS's own application manager, and shows sample tiles where that is missing
@@ -55,7 +55,7 @@
 
   function launch(id) {
     if (!id) return;
-    if (typeof PalmServiceBridge === 'undefined') { console.log('[GlassTV] would open ' + id); return; }
+    if (typeof PalmServiceBridge === 'undefined') { console.log('[LoqTV] would open ' + id); return; }
     luna('luna://com.webos.applicationManager/launch', { id: id });
   }
 

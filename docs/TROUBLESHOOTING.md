@@ -25,11 +25,11 @@ Things that bit us or contributors, so they don't bite you. Commands use `tools/
 - **Git Bash rewrites paths** like `/data/local/tmp` into Windows paths. The scripts set
   `MSYS_NO_PATHCONV=1` for you. Set `JAVA_HOME` and `ANDROID_HOME` before building there.
 
-## If Glass TV does not work on a TV
+## If Loq TV does not work on a TV
 
-The install script checks Glass TV twice: after starting it, before the TV's own launcher is touched, and
+The install script checks Loq TV twice: after starting it, before the TV's own launcher is touched, and
 after pressing Home. If either check fails, or the connection drops part-way, it puts the TV back by itself:
-Glass TV removed, the original launcher enabled and made Home again. It says so in the output. If it could
+Loq TV removed, the original launcher enabled and made Home again. It says so in the output. If it could
 not reach the TV to undo it, it prints the restore command to run once the TV is back on the network:
 `TV_HOST=<ip> tools/restore.sh <your debloat list>` (Windows: `tools\restore.ps1`). To see what it would do
 without a real failure, run the script with `SAFEGUARD_TEST=start` or `SAFEGUARD_TEST=home`: that check
@@ -50,11 +50,11 @@ fails on purpose and the rollback is printed instead of run.
   and a [Sony KDL-49W800G](https://github.com/Gathin23/cleanyourtv/issues/92). Press Home before
   `screencap`. An empty capture means nothing about the ADB connection or playback; check those
   separately.
-- **Home goes back to the TV's own home screen**, most often after Glass TV was installed by hand (an APK
+- **Home goes back to the TV's own home screen**, most often after Loq TV was installed by hand (an APK
   sideloaded, then picked as the default in Android's "Select a Home app" dialog). That only sets a
   preference, and Android drops it whenever the list of home apps changes: a system update, an update of
-  the TV's own launcher, a reboot on some firmware. What keeps Glass TV as Home is disabling the stock
-  launcher, which is what `launcher/build-and-install.sh` does: it starts Glass TV first, checks it runs,
+  the TV's own launcher, a reboot on some firmware. What keeps Loq TV as Home is disabling the stock
+  launcher, which is what `launcher/build-and-install.sh` does: it starts Loq TV first, checks it runs,
   then disables the stock launcher with `pm disable-user` (reversible, never uninstalled) and puts
   everything back if anything fails. If Home has gone back:
   - Run the install script again; it finds the stock launcher and disables it.

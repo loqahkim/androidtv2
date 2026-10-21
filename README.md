@@ -1,9 +1,9 @@
-# Glass TV
+# Loq TV
 
 **Make your Android TV or Google TV fast and ad-free again: strip out the bloat and ads, free up memory,
 and come home to just your apps, with a new place to visit behind them every week.**
 
-Glass TV debloats any Android TV or Google TV over Wi-Fi, with no root and nothing that can't be undone, then
+Loq TV debloats any Android TV or Google TV over Wi-Fi, with no root and nothing that can't be undone, then
 swaps the ad-filled home screen for a light one in frosted glass, with a new set of places behind your apps
 every week.
 
@@ -61,7 +61,7 @@ while you are inside an app.
 
 **Using an AI coding agent** (Claude Code, Codex, Cursor, Copilot…)? Point it at this repository and ask it to
 set up your TV. [AGENTS.md](AGENTS.md) tells any agent, even a small model, how to do it safely on any Android TV or Google
-TV: it first works out which Glass TV your TV can run (the Android launcher, the LG webOS app, or neither on
+TV: it first works out which Loq TV your TV can run (the Android launcher, the LG webOS app, or neither on
 Samsung and Roku), then
 asks before each change, backs up first, never uninstalls, and checks each step with you as it goes.
 
@@ -77,7 +77,7 @@ launcher/build-and-install.sh                                 # build the launch
 tools/theme.sh themes/<your theme>                            # push your settings and wallpapers
 ```
 
-Glass TV clears the TV's caches by itself every 15 days ([how](docs/cache-clean.md)). To clean several TVs
+Loq TV clears the TV's caches by itself every 15 days ([how](docs/cache-clean.md)). To clean several TVs
 from one computer instead, [`tools/cache-clean.sh`](docs/cache-clean.md) finds the TVs on your network and
 clears their caches, leaving sign-ins and app data untouched.
 
@@ -85,13 +85,13 @@ clears their caches, leaving sign-ins and app data untouched.
 
 Android TV and Google TV, Android 8 or newer, on the TV or on a box plugged into any TV.
 [docs/DEVICES.md](docs/DEVICES.md) lists every tested model and how far each was tested: end to end with
-Glass TV, with the original launcher, or debloat only, plus what is expected to work and what cannot.
+Loq TV, with the original launcher, or debloat only, plus what is expected to work and what cannot.
 
 ## LG and Samsung TVs
 
 LG TVs run webOS and Samsung TVs run Tizen; neither can run Android apps, and neither lets any app replace its
-home screen or the Home button. For the full Glass TV, plug in a Google TV or Android TV box (Chromecast with
-Google TV, Xiaomi Mi Box, NVIDIA Shield): the TV becomes the screen and Glass TV is Home. On LG, a version you
+home screen or the Home button. For the full Loq TV, plug in a Google TV or Android TV box (Chromecast with
+Google TV, Xiaomi Mi Box, NVIDIA Shield): the TV becomes the screen and Loq TV is Home. On LG, a version you
 open as an app is in preview in [webos/](webos/README.md).
 
 ## Places, or pictures of your own
